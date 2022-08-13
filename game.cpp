@@ -38,22 +38,22 @@ void Game::Run(){
                             std::cout << "Mouse Clicked " << mousePosition.x << " " << mousePosition.y << std::endl;
 
                             ///TODO fix so that you don't need to subtract 100
-                            if(_gameGraphics.yellowButton->GetButton().getGlobalBounds().contains(mousePosition.x - 100, mousePosition.y - 100)){
+                            if(_gameGraphics.yellowButton->GetButton().getGlobalBounds().contains(mousePosition.x, mousePosition.y)){
                                 _gameData._activeButton = _gameGraphics.yellowButton;
                                 illuminate_button = true;
                             }
 
-                            if(_gameGraphics.blueButton->GetButton().getGlobalBounds().contains(mousePosition.x - 100, mousePosition.y - 100)){
+                            if(_gameGraphics.blueButton->GetButton().getGlobalBounds().contains(mousePosition.x, mousePosition.y)){
                                 _gameData._activeButton = _gameGraphics.blueButton;
                                 illuminate_button = true;
                             }
 
-                            if(_gameGraphics.redButton->GetButton().getGlobalBounds().contains(mousePosition.x - 100, mousePosition.y - 100)){
+                            if(_gameGraphics.redButton->GetButton().getGlobalBounds().contains(mousePosition.x, mousePosition.y)){
                                 _gameData._activeButton = _gameGraphics.redButton;
                                 illuminate_button = true;
                             }
 
-                            if(_gameGraphics.greenButton->GetButton().getGlobalBounds().contains(mousePosition.x - 100, mousePosition.y - 100)){
+                            if(_gameGraphics.greenButton->GetButton().getGlobalBounds().contains(mousePosition.x, mousePosition.y)){
                                 _gameData._activeButton = _gameGraphics.greenButton;
                                 illuminate_button = true;
                             } 
